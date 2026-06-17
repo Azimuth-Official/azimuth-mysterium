@@ -1,0 +1,16 @@
+{
+  "name": "azimuth-mysterium",
+  "version": "0.1.0",
+  "description": "Azimuth Mysterium VPN integration module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": ["azimuth", "mysterium", "vpn"],
+  "author": "Azimuth team",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
