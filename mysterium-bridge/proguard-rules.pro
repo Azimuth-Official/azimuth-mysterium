@@ -1,0 +1,2 @@
+-keep class mysterium.** { *; }
+-keep class network.mysterium.** { *; }

@@ -1,36 +1,28 @@
-# Azimuth Mysterium VPN Integration Module
+# Azimuth Mysterium Bridge
 
-A VPN integration module for the Azimuth platform, providing seamless connectivity and privacy features through Mysterium Network integration.
+Android library module integrating [Mysterium Network](https://mysterium.network) VPN provider node into the Azimuth Observer app. Enables users to contribute bandwidth to the decentralized VPN network and earn bonus rewards.
 
-## Overview
+Licensed under GPL v3.
 
-The azimuth-mysterium module enables integration of Mysterium VPN capabilities into Azimuth applications, supporting secure and private network communications.
+## Integration
 
-## Features
-
-- VPN network integration
-- Node connectivity management
-- Privacy-preserving communications
-- Cross-platform support
-
-## Getting Started
-
-### Installation
+Add as a Git submodule in your Android project:
 
 ```bash
-npm install azimuth-mysterium
+git submodule add https://github.com/Azimuth-Official/azimuth-mysterium.git
 ```
 
-### Basic Usage
-
-```javascript
-// Example usage coming soon
+In your `settings.gradle.kts`:
+```kotlin
+include(":mysterium-bridge")
+project(":mysterium-bridge").projectDir = file("azimuth-mysterium/mysterium-bridge")
 ```
 
-## Development
+In your app `build.gradle.kts`:
+```kotlin
+implementation(project(":mysterium-bridge"))
+```
 
-Contributions to the Azimuth project are welcome. See the main Azimuth documentation for contribution guidelines.
+## About Azimuth
 
-## License
-
-See LICENSE file for details.
+[Azimuth](https://azimuth.day) is a Signals-of-Opportunity (SoOP) DePIN positioning and timing network.

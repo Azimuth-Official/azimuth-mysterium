@@ -1,0 +1,3 @@
+-keep class mysterium.** { *; }
+-keep class network.mysterium.** { *; }
+-keep class day.azimuth.mysterium.** { *; }
