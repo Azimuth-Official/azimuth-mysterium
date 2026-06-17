@@ -47,18 +47,18 @@ class MystNodeService : Service() {
     private fun createNotificationChannel() {
         val channel = NotificationChannel(
             CHANNEL_ID,
-            "Mysterium Node",
+            "Network Support",
             NotificationManager.IMPORTANCE_LOW,
         ).apply {
-            description = "Shows when the Mysterium provider node is active"
+            description = "Shows when the Network Support provider node is active"
         }
         getSystemService(NotificationManager::class.java).createNotificationChannel(channel)
     }
 
     private fun buildNotification(): Notification =
         NotificationCompat.Builder(this, CHANNEL_ID)
-            .setContentTitle("Mysterium Node Active")
-            .setContentText("Contributing bandwidth to the Mysterium network")
+            .setContentTitle("Network Support Active")
+            .setContentText("Contributing bandwidth to the Azimuth network")
             .setSmallIcon(android.R.drawable.ic_menu_share)
             .setOngoing(true)
             .build()
