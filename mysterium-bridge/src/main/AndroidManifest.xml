@@ -9,7 +9,11 @@
         <service
             android:name=".MystNodeService"
             android:foregroundServiceType="specialUse"
-            android:exported="false" />
+            android:exported="false">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Decentralized VPN provider node runs the Mysterium SDK when the user enables Network Support" />
+        </service>
     </application>
 
 </manifest>
